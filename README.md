@@ -156,12 +156,3 @@ Test scenarios simulated real-world usage:
 Overall, the system is robust but requires enhancements in validation and state management. Future improvements should prioritize these areas and consider automated testing.
 
 ---
-
-## Contributors
-
-- **Abdullah Daoud (22I-2626, SE-E)**
-
-**Submitted on:** Monday, September 16, 2024  
-**Course:** Software Quality Engineering, Fall 2024  
-**Instructor:** Madam Uzma Mahar  
-**Department:** Software Engineering, FAST – National University of Computer & Emerging Sciences, Islamabad Campus
