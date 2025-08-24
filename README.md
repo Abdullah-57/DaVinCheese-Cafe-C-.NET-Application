@@ -1,6 +1,6 @@
 # DaVinCheese Café - Café Management System
 
-This repository contains the **DaVinCheese Café Management System**, developed as a group project for the Spring 2024 Database Systems course at FAST – National University of Computer & Emerging Sciences, Islamabad Campus. Built using C# for frontend and backend logic, integrated with SQL Server for database management, it handles café operations such as user sign-ups, menu management, discounts, feedback, cart operations, table reservations, and payments. This README provides a comprehensive guide to using the system and summarizes the software quality engineering analysis conducted using JIRA for manual testing.
+This repository contains the **DaVinCheese Café Management System**. Built using C# for frontend and backend logic, integrated with SQL Server for database management, it handles café operations such as user sign-ups, menu management, discounts, feedback, cart operations, table reservations, and payments. This README provides a comprehensive guide to using the system and summarizes the software quality engineering analysis conducted using JIRA for manual testing.
 
 ---
 
@@ -180,8 +180,7 @@ Overall, the system is robust but requires enhancements in validation and state 
 
 ## 👨‍💻 Contributors
 - **Abdullah Daoud (22I-2626)**  
-- **Usman Ali (22I-2725)**  
-- **Faizan Rasheed (22I-2734)**
+- **Dawood Hussain (22I-2410)**  
 
 ---
 
