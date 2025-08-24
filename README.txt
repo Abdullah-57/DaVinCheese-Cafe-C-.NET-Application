@@ -1,59 +1,158 @@
-Welcome to the DaVinCheese Cafe Management System! This guide is designed to help you navigate through the system, whether you're a customer, staff member, or manager. We'll cover all key functions and their usage:
+# DaVinCheese Café - Café Management System
 
-(i) Customer Functions
-    (a) Menu and Add to Cart
-        To browse the cafe's menu, select the "Menu" option. This displays all available food and beverage items with details like name, price, calories, and description. To add an item to your cart, click on the "Add to Cart" button. You can adjust the quantity before adding it to your cart.
-        Once you've finished adding items to your cart, you can proceed to checkout. After checking out, you can submit feedback for any menu item you ordered by clicking on "Leave Feedback." Here, you can write a short description to share your experience with that item.
+DaVinCheese Café is a café management system developed as a group project for the Spring 2024 Database Systems course. Built using C# for the frontend and backend logic, integrated with SQL Server for database management, it handles café operations such as user sign-ups, menu management, discounts, feedback, cart operations, table reservations, and payments. This README provides a comprehensive guide to using the system and summarizes the software quality engineering analysis conducted using JIRA for manual testing.
 
-    (b) Table Reservation
-        To reserve a table, click on "Table Reservation." You can select up to two tables, choose a specific date and time, and then click "Reserve." The calendar menu allows you to easily pick your desired reservation date. Once reserved, you can view your reservation details.
+---
 
-    (c) Cart and Checkout
-        To view your cart, select the "Cart" option. Here, you can see all the items you've added, update quantities, or remove items. Once you're ready, proceed to checkout by clicking "Checkout." You can choose your payment method, either credit card or online payment methods like EasyPaisa or JazzCash. Enter your payment details and click "Confirm" to complete your purchase.
+## Technologies Used
 
-    (d) View Profile
-        To view your personal information, select "Profile." This displays your name, contact details, email address, and the total number of orders you've made. You can update your information if needed.
+- **Programming Language:** C#
+- **Database:** SQL Server
+- **Testing Tool:** JIRA (for test case management, execution, and bug tracking)
 
-    (e) View Past Orders
-        To view your order history, select "Past Orders." This shows a list of all your previous orders, along with the order amounts. It's a handy feature for reordering your favorite items or tracking your purchase history.
+---
 
-(ii) Staff Functions
-    (a) Add Menu Items
-        To add new menu items, staff members should select "Add Menu Items." Ensure the item is available in the inventory before adding it to the menu. Fill in details like item name, price, description, and calories, then click "Add" to include it in the menu.
+## System Usage Guide
 
-    (b) Edit Menu Items
-        To edit existing menu items, select "Edit Menu Items." Choose the item you want to update, then edit the details such as price, calories, or description. Click "Update" to save your changes.
+### (i) Customer Functions
 
-    (c) View Table Reservations
-        To view table reservations, staff members should select "Table Reservations." Enter the customer ID and reservation ID to see which customer has reserved which table. This helps manage seating arrangements and ensure tables are ready for customers.
+#### (a) Menu and Add to Cart
+- Browse the café's menu via the "Menu" option.
+- View item details: name, price, calories, description.
+- Add items to cart, adjust quantity, proceed to checkout.
+- Submit feedback post-checkout using "Leave Feedback."
 
-    (d) View Product Feedbacks
-        Staff can view customer feedback for specific menu items by selecting "Product Feedbacks." This provides insights into customer preferences and helps staff address any issues. The feedback table shows which customer gave feedback and for which menu item.
+#### (b) Table Reservation
+- Select "Table Reservation."
+- Choose up to two tables, pick date/time, click "Reserve."
+- View reservation details afterward.
 
-    (e) View Orders
-        To view current and past orders, select "View Orders." You can enter the number of orders a customer has made, and the system will display customers with that specific order count. This helps track orders and ensure customer satisfaction.
+#### (c) Cart and Checkout
+- View cart via "Cart" option: update quantities or remove items.
+- Click "Checkout," select payment method (credit card, EasyPaisa, JazzCash).
+- Enter payment details and click "Confirm" to complete the purchase.
 
-    (f) View Customer Sales
-        Staff can view a summary of sales made by customers by selecting "View Customer Sales." This table works on a threshold system—enter an amount, and you'll see all customers whose order amount exceeds that value.
+#### (d) View Profile
+- Select "Profile" to view personal info: name, contact, email, total orders.
+- Update information if needed.
 
-(iii) Manager Functions
-    (a) Add Employee
-        Managers can add new employees to the system by selecting "Add Employee." Enter details like first name, last name, email, password, and contact number. Once all required information is filled in, click "Add" to add the new employee to the system.
+#### (e) View Past Orders
+- Select "Past Orders" to see previous orders.
+- Useful for reordering favorites or tracking purchase history.
 
-    (b) View Employee Details
-        To view detailed information about employees, select "View Employee Details." This displays employee information, including contact details, roles, authority level, and the number of sales they have completed. This is useful for managing staff and ensuring efficient cafe operations.
+---
 
-    (c) View Sales
-        Managers can track the cafe's financial performance by selecting "View Sales." This menu shows all customers who have checked out with details like invoice time and total amount. It also includes a panel for Star and Dog items, indicating the most popular and least popular products.
+### (ii) Staff Functions
 
-    (d) View Product Details
-        To view detailed information about all products, select "View Product Details." This includes inventory status, customer feedback, price, calories, and description. Managers can use this information to make informed decisions about product offerings.
+#### (a) Add Menu Items
+- Select "Add Menu Items."
+- Ensure availability in inventory, enter details (name, price, description, calories), click "Add."
 
-    (e) Add Event Discounts
-        To create special event discounts, managers should select "Add Event Discounts." Provide a name, description, and discount percentage. Note that only one special event can be active at a time. To add a new event, you must first remove or stop the current one. Removing an event will reset all product prices to their default values.
+#### (b) Edit Menu Items
+- Select "Edit Menu Items," choose item, update details, click "Update."
 
-    (f) Add Inventory
-        To add new inventory items, select "Add Inventory." This menu shows products whose stock level is below 50, indicating that restocking may be needed. To order more stock, enter the product ID and the desired quantity.
+#### (c) View Table Reservations
+- Select "Table Reservations," enter customer and reservation ID to view reserved tables.
 
-(iv) Conclusion
-    These usage guidelines cover the essential functions for customers, staff, and managers in the DaVinCheese Cafe Management System. Follow these steps to navigate through the system effectively, and refer to this guide whenever you need assistance with specific features or tasks. If you encounter any issues, contact system support for further assistance.
+#### (d) View Product Feedbacks
+- Select "Product Feedbacks" to see customer feedback with associated items.
+
+#### (e) View Orders
+- Select "View Orders" to see current and past orders.
+- Enter number of orders to filter customers.
+
+#### (f) View Customer Sales
+- Select "View Customer Sales."
+- Enter a threshold amount to see customers with order totals exceeding that value.
+
+---
+
+### (iii) Manager Functions
+
+#### (a) Add Employee
+- Select "Add Employee," enter details (first/last name, email, password, contact), click "Add."
+
+#### (b) View Employee Details
+- View employee info: contact details, roles, authority, completed sales.
+
+#### (c) View Sales
+- Track financial performance, showing checked-out customers with invoice time and total.
+- Panel shows Star (most popular) and Dog (least popular) items.
+
+#### (d) View Product Details
+- View inventory, feedback, price, calories, description for all products.
+
+#### (e) Add Event Discounts
+- Create event discounts: provide name, description, percentage.
+- Only one event active at a time; remove current before adding new.
+- Removing an event resets product prices to default.
+
+#### (f) Add Inventory
+- View products with stock below 50.
+- Enter product ID and quantity to restock.
+
+---
+
+## Testing Overview
+
+Manual testing was performed on 47 test cases covering core functionalities: user interactions, data operations, input validation, and edge cases. Focus was on identifying bugs, analyzing pass/fail ratios, and providing recommendations.
+
+### JIRA Dashboards
+
+**Test Execution Dashboard**
+- Recent Test Cases: Lists most recently executed and completed cases.
+- High-Priority Failed Test Cases: Highlights 4 critical failed test cases.
+- Pass/Fail Pie Chart: 40 passed (85% pass rate), 7 failed out of 47 total.
+
+**Bug Tracking Dashboard**
+- Bug Status Pie Chart: All 7 bugs are "In Progress."
+- Critical High-Priority Bugs: 3 bugs with high priority and critical severity.
+- Priority Distribution Pie Chart: 4 high, 2 medium, 1 low.
+
+---
+
+## Analysis of Test Execution Results
+
+- Out of 47 test cases, 40 passed, 7 failed (~85% pass rate).
+- Failed cases involved:
+  - Data validation issues (duplicate emails, empty feedback, zero quantity)
+  - Incorrect business logic (e.g., prices not reverting after discount removal)
+  - Edge case handling (e.g., payments with empty cart)
+- Successful cases confirmed features like adding items, editing menu items, submitting feedback.
+
+### Complexity of Test Scenarios
+
+Test scenarios simulated real-world usage:
+
+- **User Interactions:** Sign-up, feedback, cart operations.
+- **Data Operations:** Menu edits, discount applications, data retrieval.
+- **Input Validation:** Ensuring valid inputs across forms.
+- **Edge Cases:** Empty cart payments, discount reversals.
+
+### Summary of Critical Bugs
+
+1. **Online Payment with No Items in Cart**
+   - Impact: Allows invalid transactions, billing issues, customer dissatisfaction.
+   - Solution: Pre-payment check to ensure cart has items; display error if empty.
+
+2. **Credit Card Payment with No Items in Cart**
+   - Impact: Permits empty cart transactions, causing confusion.
+   - Solution: Validation in credit card process to require items; prompt user.
+
+3. **Original Price Not Reverted After Removing Discount**
+   - Impact: Price not reset, affecting revenue and accuracy.
+   - Solution: Store original prices before applying discounts and restore upon removal.
+
+---
+
+## Reflection and Lessons Learned
+
+- **Input Validation:** Strengthen form, payment, and data checks.
+- **Edge Case Handling:** Focus on unlikely scenarios that disrupt features.
+- **State Management:** Improve tracking of states (e.g., original prices).
+- **Automation:** Automate tests for efficiency and accuracy.
+- **Prioritization:** Emphasize payment and pricing testing to build trust.
+
+Overall, the system is robust but requires enhancements in validation and state management. Future improvements should prioritize these areas and consider automated testing.
+
+---
